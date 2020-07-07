@@ -1,17 +1,23 @@
-[{]: <region> (header)
-# WhatsApp Clone with Ionic & Meteor CLI
-[}]: #
-[{]: <region> (body)
-# WhatsApp Clone with Meteor CLI and Ionic
+#The social app
+This app will allow students to see what is going on on campus by event types and give them the ability to add events themselves
+##Required functionalities:
+###Add events
+Only if logged in, see below
+###View list of upcoming events by type
+Regardless of logged in or out, you should be able to see this
+###View list of upcoming evenet by what is happening now
+Regardless of logged in or out, you should be able to see this
+###View event page
+When you click on a specific event in an event list, it should take you to a page JUST for that specfic event for more info on it
+###User login and authentication
+This will be nearly identitcal to the one in the WhatsApp tutorial
+###Ability to add event ONLY if logged in
+User authentication stuff similar to tutorial
+###Ability to edit and delete one's own event
+Self-explanatory
 
-[![bitHound Overall Score](https://www.bithound.io/github/DAB0mB/angular-meteor-whatsapp/badges/score.svg)](https://www.bithound.io/github/DAB0mB/angular-meteor-whatsapp) [![bitHound Dependencies](https://www.bithound.io/github/DAB0mB/angular-meteor-whatsapp/badges/dependencies.svg)](https://www.bithound.io/github/DAB0mB/angular-meteor-whatsapp/master/dependencies/npm)
-
-- [Start the tutorial @ angular-meteor.com](https://www.angular-meteor.com/tutorials/whatsapp/meteor/bootstrapping)
-
-[}]: #
-[{]: <region> (footer)
-[{]: <helper> (nav_step)
-| [Begin Tutorial >](manuals/views/step1.md) |
-|----------------------:|
-[}]: #
-[}]: #
+##Notes
+###SCSS
+Our stylesheets have to be REALLY REALLY good. This app has to look and feel appealing, otherwise people wont use it
+###Test out how it looks on iphone/android frequently
+To see this, just right click, choose inspect, and do Ctrl+Shift+m
