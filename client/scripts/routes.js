@@ -38,7 +38,7 @@ export default class RoutesConfig extends Config {
         views: {
           'tab-makeEvent': {
             templateUrl: makeEventTemplateUrl,
-            controller: 'MakeEventCtrl as chats' //breaks here
+            controller: 'MakeEventCtrl as chat' //breaks here
           }
         }
       });

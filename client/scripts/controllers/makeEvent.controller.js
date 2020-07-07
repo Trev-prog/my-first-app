@@ -16,18 +16,14 @@ export default class MakeEventCtrl extends Controller {
     Chats.remove(chat._id);
   }
 
+  coolstr(){
+    //Chats.insert({ "name" : 'this name', "eventType" : 'social' });
+}
 
-   sendMessage(){
-    if (_.isEmpty(this.message)) return;
 
-    this.callMethod( 'newMessage', { //calls the method newMessage from lib/methods.js (accessible to bother server and client) and passes in the following:
-      text: this.message,
-      type: 'text',
-    })
-
-    delete this.message
-
-  }
+  myNewEvent(){
+   Chats.insert({ "name" : this.myname, "eventType" : this.myeventType, "summary" : this.mysummary, "description" : this.mydescription, "location" : this.mylocation});
+  } 
 }
 
 MakeEventCtrl.$name = 'MakeEventCtrl';
