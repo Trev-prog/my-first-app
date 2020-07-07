@@ -1,26 +1,14 @@
 <ion-view view-title="Make Event">
   <ion-content>
 
-        <!-- Starts -->
-    <!-- 
-      <button class="button button-clear button-icon button-positive icon ion-ios-upload-outline"></button>  
-    -->
-
     <label class="item-input-wrapper">
       <input ng-model="chat.myname"
             placeholder="Your event name"
             dir="auto"
             type="text"
-            on-return="chat.sendMessage(); chat.closeKeyboard()"
+            on-return="chat.closeKeyboard()"
             on-focus="chat.inputUp()"
             on-blur="chat.inputDown"/>
-            <!-- 
-                ng-model binds input to chat.message
-                on-return (Enter), it calls the chat.sendMessage function
-
-            input ng-model takes in input, assigns it the name chat.message, or type text, and when you click enter, it runs the ChatsCtrll sendMessage function and closeKeyboard function
-
-            if on iOS, the same happens but using the inputUp and inputDown functions -->
     </label>
 
 
@@ -29,16 +17,9 @@
             placeholder="Your event type"
             dir="auto"
             type="text"
-            on-return="chat.sendMessage(); chat.closeKeyboard()"
+            on-return="chat.closeKeyboard()"
             on-focus="chat.inputUp()"
             on-blur="chat.inputDown"/>
-            <!-- 
-                ng-model binds input to chat.message
-                on-return (Enter), it calls the chat.sendMessage function
-
-            input ng-model takes in input, assigns it the name chat.message, or type text, and when you click enter, it runs the ChatsCtrll sendMessage function and closeKeyboard function
-
-            if on iOS, the same happens but using the inputUp and inputDown functions -->
     </label>
 
 
@@ -47,16 +28,9 @@
             placeholder="Your event summary"
             dir="auto"
             type="text"
-            on-return="chat.sendMessage(); chat.closeKeyboard()"
+            on-return="chat.closeKeyboard()"
             on-focus="chat.inputUp()"
             on-blur="chat.inputDown"/>
-            <!-- 
-                ng-model binds input to chat.message
-                on-return (Enter), it calls the chat.sendMessage function
-
-            input ng-model takes in input, assigns it the name chat.message, or type text, and when you click enter, it runs the ChatsCtrll sendMessage function and closeKeyboard function
-
-            if on iOS, the same happens but using the inputUp and inputDown functions -->
     </label>
 
 
@@ -65,16 +39,9 @@
             placeholder="Your event description"
             dir="auto"
             type="text"
-            on-return="chat.sendMessage(); chat.closeKeyboard()"
+            on-return="chat.closeKeyboard()"
             on-focus="chat.inputUp()"
             on-blur="chat.inputDown"/>
-            <!-- 
-                ng-model binds input to chat.message
-                on-return (Enter), it calls the chat.sendMessage function
-
-            input ng-model takes in input, assigns it the name chat.message, or type text, and when you click enter, it runs the ChatsCtrll sendMessage function and closeKeyboard function
-
-            if on iOS, the same happens but using the inputUp and inputDown functions -->
     </label>
 
 
@@ -83,27 +50,12 @@
             placeholder="Your event location"
             dir="auto"
             type="text"
-            on-return="chat.sendMessage(); chat.closeKeyboard()"
+            on-return="chat.closeKeyboard()"
             on-focus="chat.inputUp()"
             on-blur="chat.inputDown"/>
-            <!-- 
-                ng-model binds input to chat.message
-                on-return (Enter), it calls the chat.sendMessage function
-
-            input ng-model takes in input, assigns it the name chat.message, or type text, and when you click enter, it runs the ChatsCtrll sendMessage function and closeKeyboard function
-
-            if on iOS, the same happens but using the inputUp and inputDown functions -->
     </label>
 
-
     <button ng-click="chat.myNewEvent()" class="button button-clear button-positive">Create Event</button> 
-
-
-
-
-     <p>Enter your Name: <input type = "text" ng-model = "chat.name"></p>
-     <p>Hello {{ chat.myeventType }} <span ng-bind = "chat.name"></span>!</p>
-
 
   </ion-content>
 
