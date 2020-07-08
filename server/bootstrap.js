@@ -46,7 +46,7 @@ Meteor.startup(function() {
     },
     {
       name: 'Arabic Tutoring Session',
-      eventType: 'club',
+      eventType: 'academic',
       summary: 'Review before WPR 2',
       description: 'description goes here...blah blah blah',
       location: 'Jefferson Hall 2nd Floor',

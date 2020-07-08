@@ -11,6 +11,7 @@ import { Meteor } from 'meteor/meteor';
 // Modules
 import ChatsCtrl from '../controllers/chats.controller';
 import ClubCtrl from '../controllers/club.controller';
+import AcademicCtrl from '../controllers/academic.controller';
 import MakeEventCtrl from '../controllers/makeEvent.controller';
 import CalendarFilter from '../filters/calendar.filter';
 import RoutesConfig from '../routes';
@@ -26,6 +27,7 @@ Angular.module(App, [
 new Loader(App)
   .load(ChatsCtrl)
   .load(ClubCtrl)
+  .load(AcademicCtrl)
   .load(MakeEventCtrl)
   .load(CalendarFilter)
   .load(RoutesConfig);

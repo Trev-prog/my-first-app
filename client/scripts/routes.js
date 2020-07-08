@@ -4,6 +4,7 @@ import chatsTemplateUrl from '../templates/chats.html';
 import clubTemplateUrl from '../templates/club.html';
 import tabsTemplateUrl from '../templates/tabs.html';
 import makeEventTemplateUrl from '../templates/makeEvent.html';
+import academicTemplateUrl from '../templates/academic.html';
 
 export default class RoutesConfig extends Config {
   configure() {
@@ -39,6 +40,16 @@ export default class RoutesConfig extends Config {
           'tab-makeEvent': {
             templateUrl: makeEventTemplateUrl,
             controller: 'MakeEventCtrl as chat' //breaks here
+          }
+        }
+      })
+
+      .state('tab.academic', {
+        url: '/academic',
+        views: {
+          'tab-academic': {
+            templateUrl: academicTemplateUrl,
+            controller: 'AcademicCtrl as chats' //breaks here
           }
         }
       });
