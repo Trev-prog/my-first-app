@@ -1,0 +1,13 @@
+<ion-view view-title="Settings">
+  <ion-content>
+  	<div ng-if="settings.myVar == 'false' ">
+YOU ARE NOT LOGGED IN!!!
+  	</div>
+
+  
+    <div class="padding text-center">
+      <button ng-click="settings.logout()" class="button button-clear button-assertive">Logout</button>
+    </div>
+    Logged in flag is set to {{ settings.myVar }}
+  </ion-content>
+</ion-view>

@@ -17,7 +17,7 @@ export default class MakeEventCtrl extends Controller {
     Chats.remove(chat._id);
   }
 
-
+ //1.5.8
   myNewEvent(){
    
     if (_.isEmpty(this.myname)) return this.handleEmpty("event name");
@@ -44,8 +44,6 @@ export default class MakeEventCtrl extends Controller {
 
 
 }
-
-//import underscore
 
 MakeEventCtrl.$name = 'MakeEventCtrl';
 MakeEventCtrl.$inject = ['$ionicPopup'];
